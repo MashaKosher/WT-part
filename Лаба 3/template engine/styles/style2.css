@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main > * {
+    margin: 10px;
+    padding: 5px;
+}
+
+h1{
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    width: 200px;
+    height: 46px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(83, 80, 80);
+    border-radius: 5px;
+}
+
+@media (width: "350px") {
+    .main > input {
+        width: 50px;
+    }
+}
+
+.sup{
+    text-align: center;
+}
+
+.sup>p>a{
+    text-decoration: none;
+    color: rgb(95, 92, 92);
+}
+
+.sup>p>a:hover{
+    border-bottom: solid 3px rgb(109, 42, 42);
+}
+
+.main>div>a{
+    text-decoration: none;
+    color: rgb(95, 92, 92);
+}
+
+.main>div>a:hover{
+    border-bottom: solid 3px rgb(109, 42, 42);
+}
+
+.main > a {
+    min-width: 200px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    margin: 5px;
+    border-width: 2px;
+    border-color: black;
+    font-family: "Gotham-Book-It", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.main > a:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: 0.6s linear;
+}
