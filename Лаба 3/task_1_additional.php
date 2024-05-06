@@ -18,7 +18,7 @@ for($j = 0; $j < $arr_len; $j++){
             }
         }
         if ($flag){
-            $uniq_arr[] = $arr[$j][$i];~
+            $uniq_arr[] = $arr[$j][$i];
         }else{
             unset($arr[$j][$i]);
         }
