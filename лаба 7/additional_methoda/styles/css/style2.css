@@ -1,0 +1,24 @@
+body{
+    font-family: lack normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body>div{
+    max-width: 500px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: lack;
+    font-style: italic;
+    src: url(../fonts/lack-italic.otf);
+  }
+  
+  @font-face {
+    font-family: lack;
+    font-style: normal;
+    src: url(../fonts/lack-regular.otf);
+  }
+  

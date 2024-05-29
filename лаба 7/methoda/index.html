@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <form action="./script.php" method="GET">
+        <h1 id = "header"> Форма</h1>
+        <div id="sender_input"><input  name = "label" placeholder="Тема"></div>
+        <!-- <div id="text"><input></div> -->
+        <div id="text"><textarea name = "text" placeholder="Сообщение"></textarea></div>
+        <div id="button_div">
+            <div><input type="button" id="add_button" value="Добавить Получателя"></div>
+            <div><input type="button" id="delete_button" value="Удалить Получателя"></div>
+        </div>
+        <div><input type="submit" value="Submit"></div>
+    </form>
+
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

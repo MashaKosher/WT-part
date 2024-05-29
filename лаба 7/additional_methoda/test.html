@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <title>Доставка пиццы</title>
+</head>
+
+<body>
+    <div>
+        <section id="order">
+
+            <form id="order-form" method="GET" action="./script.php">
+                <h2>Информация</h2>
+                <div id="delivery1"><span>Email:</span><input aria-describedby = "email" name="email" type ="text"></div>    
+                <div id="delivery1"><span>Address: </span><input aria-describedby = "address" name="address" type ="text"></div>    
+                <div id="delivery1"><span>Name: </span><input aria-describedby = "name" name="name" type ="text"></div>
+                <p>Тип доставки: </p>   
+                <div id="delivery"><input name = "delivery-type" value = "pickup"  type = "radio"><span>Самовывоз</span></div>
+                <div id="delivery"><input name = "delivery-type" value = "courier"  type = "radio"><span>Курьером</span></div>
+                <h2 id="bill">Расчетная цена: 0.00 рублей</h2>
+
+
+                <div id="make-order"><input id = "order-button"  type="submit" value="Заказать"></div>
+                <h2 id="order_header">Ваш заказ</h2>
+                
+
+            </form>
+            <button id="but1">Удалить</button>
+        </section>
+
+        <div class="main">
+            <header>
+                <h1>Доставка пиццы</h1>
+                <hr>
+            </header>
+
+            <section class="content">
+                <div class="content-row1">
+                    <div>
+                        <div><img src="./styles/img/meat.png" alt="Мясная"></div>
+                        <h2>Мясная</h2>
+                        <form id="form1">
+                            <div><span>Количество: </span><input name="amount" style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input id="small" type="radio" name="action1" value="meat1"></div>
+                                    <div><span>18.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input id="medium" type="radio" name="action1" value="meat2"></div>
+                                    <div><span>24.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input id="big" type="radio" name="action1" value="meat3"></div>
+                                    <div><span>36</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button" type="submit" value="Добавить"></div>
+                        </form>
+                    </div>
+
+                    <!--  -->
+                    <div>
+                        <div><img src="./styles/img/bawarian.png" alt="Баварская"></div>
+                        <h2>Баварская</h2>
+                        <form id="form2">
+                            <div><span>Количество: </span><input name="amount" style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action2" value="bawarian1"></div>
+                                    <div><span>16.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action2" value="bawarian2"></div>
+                                    <div><span>22.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action2" value="bawarian3"></div>
+                                    <div><span>34</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button" type="submit" value="Добавить"></div>
+
+                        </form>
+                    </div>
+
+                    <!--  -->
+                    <div>
+                        <div><img src="./styles/img/julien.png" alt="Жульен"></div>
+                        <h2>Жульен</h2>
+                        <form id="form3">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action3" value="julien1"></div>
+                                    <div><span>18.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action3" value="julien2"></div>
+                                    <div><span>24.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action3" value="julien3"></div>
+                                    <div><span>36</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button" type="submit" value="Добавить"></div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="content-row2">
+                    <div>
+                        <div><img src="./styles/img/karbonara.png"></div>
+                        <h2>Карбонара</h2>
+                        <form id="form4">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action4" value="karbonara1"></div>
+                                    <div><span>16.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action4" value="karbonara2"></div>
+                                    <div><span>22.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action4" value="karbonara3"></div>
+                                    <div><span>34</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button"type="submit" value="Добавить"></div>
+                        </form>
+                    </div>
+
+                    <!--  -->
+                    <div>
+                        <div><img src="./styles/img/pepperoni.png" alt="Пепперони"></div>
+                        <h2>Пепперони</h2>
+                        <form id="form5">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action5" value="pepperoni1"></div>
+                                    <div><span>10.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action5" value="pepperoni2"></div>
+                                    <div><span>20.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action5" value="pepperoni3"></div>
+                                    <div><span>28</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button"type="submit" value="Добавить"></div>
+                        </form>
+
+                    </div>
+
+                    <!--  -->
+                    <div>
+                        <div><img src="./styles/img/margarita.png" alt="Маргарита"></div>
+                        <h2>Маргарита</h2>
+
+
+                        <form id="form6">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action6" value="margarita1"></div>
+                                    <div><span>10.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action6" value="margarita2"></div>
+                                    <div><span>20.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action6" value="margarita3"></div>
+                                    <div><span>28</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button"type="submit" value="Добавить"></div>
+                        </form>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="content-row3">
+                    <div>
+                        <div><img src="./styles/img/cheese.png" alt="Сырная"></div>
+                        <h2>Сырная</h2>
+                        <form id="form7">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action7" value="cheese1"></div>
+                                    <div><span>10.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action7" value="cheese2"></div>
+                                    <div><span>20.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action7" value="cheese3"></div>
+                                    <div><span>28</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button"type="submit" value="Добавить"></div>
+
+                        </form>
+
+                    </div>
+
+                    <!--  -->
+                    <div>
+                        <div><img src="./styles/img/diablo.png" alt="Диабло"></div>
+                        <h2>Диабло</h2>
+                        <form id="form8">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+                                    <div><input type="radio" name="action8" value="modify"></div>
+                                    <div><span>18.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action8" value="delete"></div>
+                                    <div><span>24.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action8" value="change"></div>
+                                    <div><span>36</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button"type="submit" value="Добавить"></div>
+
+                        </form>
+
+                    </div>
+
+                    <!--  -->
+                    <div>
+                        <div><img src="./styles/img/pesto.png" alt="Песто"></div>
+                        <h2>Песто</h2>
+
+                        <form id="form9">
+                            <div><span>Количество: </span><input style="max-width: 20px;"></div>
+                            <div class="size-type">
+                                <div>
+
+                                    <div><input type="radio" name="action9" value="pesto"></div>
+                                    <div><span>18.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action9" value="pesto"></div>
+                                    <div><span>24.99</span></div>
+                                </div>
+                                <div>
+                                    <div><input type="radio" name="action9" value="pesto"></div>
+                                    <div><span>36</span></div>
+                                </div>
+                            </div>
+                            <div><input id="add-item-button"type="submit" value="Добавить"></div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="./scripts/test.js"></script>
+</body>
+
+</html>
